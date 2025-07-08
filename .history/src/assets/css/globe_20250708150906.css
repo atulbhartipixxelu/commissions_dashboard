@@ -1,0 +1,253 @@
+/* Sign In Css Start */
+.page-authentication-sign-up-cover  .MuiBox-root.css-10qrtl2 {
+    display: none;
+}
+/* === Signup Page Styles === */
+.signup-container {
+  max-width: 800px;
+  margin: 40px auto;
+  text-align: center;
+  font-family: sans-serif;
+  padding: 0 20px;
+}
+
+.signup-logo {
+  height: 40px;
+}
+
+.signup-header {
+  margin-bottom: 20px;
+}
+
+.signup-text {
+  font-size: 14px;
+  margin-top: 10px;
+}
+.signup-link {
+    font-weight: bold;
+    background: linear-gradient(180deg, #007BFF 0%, #1E90FF 100%);
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
+}
+
+.signup-info-box {
+    border: 1px solid #00a4bd;
+    border-radius: 4px;
+    padding: 20px;
+    margin-bottom: 30px;
+    width: 75%;
+    margin: 0 auto;
+}
+
+.signup-info-box h4 {
+  margin: 0 0 10px;
+  font-weight: 600;
+}
+
+.signup-info-box p {
+  font-size: 14px;
+}
+
+.classic-login-link {
+  font-weight: bold;
+    background: linear-gradient(180deg, #007BFF 0%, #1E90FF 100%);
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
+  text-decoration: none;
+  font-weight: bold;
+}
+.signup-main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: end;
+    margin-top: 50px;
+}
+
+.signup-form {
+    flex: 1 1 300px;
+    text-align: left;
+}
+
+.signup-form label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.signup-form input {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccd0d5;
+  border-radius: 4px;
+  margin-bottom: 15px;
+  background: #f5f8fa;
+}
+
+.next-button {
+  width: 100%;
+  background: linear-gradient(180deg, #007BFF 0%, #1E90FF 100%);
+  border: none;
+  color: white;
+  padding: 12px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.signup-divider {
+    width: 1px;
+    background: #ccd0d5;
+    height: 155px;
+    margin: 0px 36px;
+}
+
+.signup-social {
+  flex: 1 1 200px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.social-btn {
+    background: #e3e3e3;
+    border: 1px solid #ccd0d5;
+    padding: 12px;
+    border-radius: 4px;
+    cursor: pointer;
+    text-align: left;
+}
+
+.signup-footer-cta {
+    width: 66%;
+    margin: 50px auto 0;
+}
+.signup-footer-cta p {
+  margin-bottom: 20px;
+}
+
+.signup-cta-buttons button {
+  background: transparent;
+  border: none;
+  background: linear-gradient(180deg, #007BFF 0%, #1E90FF 100%);
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 4px;
+  margin: 0 10px;
+  cursor: pointer;
+}
+body.page-authentication-sign-up-cover {
+    background-color: #fff;
+}
+.signup-footer {
+  margin-top: 40px;
+  font-size: 12px;
+}
+
+.signup-footer a {
+  text-decoration: none;
+  font-weight: bold;
+    background: linear-gradient(180deg, #007BFF 0%, #1E90FF 100%);
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
+}
+.signup-social button.social-btn img {
+    width: 18px;
+}
+.signup-social button.social-btn {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+body.page-authentication-sign-up-cover .MuiPaper-root.MuiPaper-elevation.MuiPaper-elevation0.MuiDrawer-paper.MuiDrawer-paperAnchorLeft.MuiDrawer-paperAnchorDockedLeft.css-k54eqi-MuiPaper-root-MuiDrawer-paper {
+    display: none;
+}
+
+
+
+
+
+
+
+
+/* Sign IN Section Css */
+body.page-authentication-sign-in-cover .MuiPaper-root.MuiPaper-elevation.MuiPaper-elevation0.MuiDrawer-paper.MuiDrawer-paperAnchorLeft {
+    display: none;
+}
+.sign_in_form .MuiPaper-root.signin-card {
+    padding: 30px;
+    background: #e1e1e14f;
+    max-width: 550px !important;
+}
+.sign_in_form .MuiPaper-root.signin-card .form-row {
+    display: flex;
+    gap: 20px;
+}
+.form-col {
+    width: 100%;
+    margin-bottom: 23px;
+}
+body.page-authentication-sign-in-cover {
+    background: #fff;
+}
+.sign_in_form h4 {
+    color: #000;
+    margin-bottom: 8px;
+}
+.sign_in_form .css-1d1wvvk-MuiInputBase-root-MuiOutlinedInput-root-MuiSelect-root {
+    height: 44.9px;
+}
+
+.sign_in_form  button.MuiButtonBase-root.MuiButton-root.MuiButton-contained.MuiButton-containedPrimary {
+    box-shadow: none;
+    background: linear-gradient(180deg, #007BFF 0%, #1E90FF 100%);
+}
+.pricing_table .MuiTabs-root {
+    border: 1px solid #ddd;
+    border-radius: 0;
+    background: transparent;
+    width: 50%;
+    margin: 45px auto;
+}
+.pricing_table button.Mui-selected {
+    background: #000 !important;
+    border-radius: 0;
+    color: #fff !important;
+    font-weight: 300;
+}
+.pricing_table button.MuiButtonBase-root {
+    background: #f4f4f4;
+    border: none;
+    border-radius: inherit !important;
+    height: 43px;
+}
+.pricing_table h4.MuiTypography-root {
+    font-size: 32px;
+}
+
+.pricing_table h4.MuiTypography-root {
+    font-size: 32px;
+}
+
+.pricing_table .MuiBox-root.css-1wr13d6 {
+    padding: 5px 0px;
+}
+
+.pricing_table .MuiBox-root.css-1wr13d6 p.MuiTypography-root {
+    font-size: 15px;
+    line-height: 0;
+}
+
+.pricing_table .css-1k22fk6-MuiGrid-root {
+    flex-basis: 33%;
+    max-width: 33%;
+}
+.pricing_table button.MuiButtonBase-root.MuiButton-root.MuiButton-contained {
+    background: linear-gradient(180deg, #007BFF 0%, #1E90FF 100%);
+    opacity: 1;
+    color: #fff;
+    border-radius: 7px !important;
+}
