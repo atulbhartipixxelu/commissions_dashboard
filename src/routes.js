@@ -46,6 +46,7 @@ import Billing from "layouts/pages/account/billing";
 import Invoice from "layouts/pages/account/invoice";
 import Timeline from "layouts/pages/projects/timeline";
 import PricingPage from "layouts/pages/pricing-page";
+import CompletePayment from "layouts/pages/complete-payment/complete-payment";
 import Widgets from "layouts/pages/widgets";
 import RTL from "layouts/pages/rtl";
 import Charts from "layouts/pages/charts";
@@ -60,9 +61,8 @@ import EditProduct from "layouts/ecommerce/products/edit-product";
 import ProductPage from "layouts/ecommerce/products/product-page";
 import OrderList from "layouts/ecommerce/orders/order-list";
 import OrderDetails from "layouts/ecommerce/orders/order-details";
-import SignInBasic from "layouts/authentication/sign-in/basic";
+
 import SignInCover from "layouts/authentication/sign-in/cover";
-import SignInIllustration from "layouts/authentication/sign-in/illustration";
 import SignUpCover from "layouts/authentication/sign-up/cover";
 import ResetCover from "layouts/authentication/reset-password/cover";
 
@@ -94,12 +94,7 @@ const routes = [
         route: "/pages/account/settings",
         component: <Settings />,
       },
-      {
-        name: "Logout",
-        key: "logout",
-        route: "/authentication/sign-in/basic",
-        component: <SignInBasic />,
-      },
+      
     ],
   },
   { type: "divider", key: "divider-0" },
@@ -141,6 +136,13 @@ const routes = [
             component: <Timeline />,
           },
         ],
+      },
+
+{
+        name: "Complete Payment Page",
+        key: "complete-payment",
+        route: "/pages/complete-payment",
+        component: <CompletePayment />,
       },
       {
         name: "Pricing Page",
@@ -320,23 +322,11 @@ const routes = [
         key: "sign-in",
         collapse: [
           {
-            name: "Basic",
-            key: "basic",
-            route: "/authentication/sign-in/basic",
-            component: <SignInBasic />,
-          },
-          {
             name: "Cover",
             key: "cover",
             route: "/authentication/sign-in/cover",
             component: <SignInCover />,
-          },
-          {
-            name: "Illustration",
-            key: "illustration",
-            route: "/authentication/sign-in/illustration",
-            component: <SignInIllustration />,
-          },
+          }, 
         ],
       },
       {

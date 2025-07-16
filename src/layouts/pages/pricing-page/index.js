@@ -43,11 +43,11 @@ function PricingPage() {
   };
 
   return (
-    <PageLayout>
-      <Header tabValue={tabValue} tabHandler={handleSetTabValue}>
-        <Container>
+    <PageLayout className='pricing_bg_chg'>
+      <Header tabValue={tabValue} tabHandler={handleSetTabValue} >
+        <Container >
           <PricingCards prices={prices} />
-          <Faq />
+          {/* <Faq /> */}
         </Container>
       </Header>
       <Footer />

@@ -9,18 +9,16 @@ import MDTypography from "components/MDTypography";
 import MDInput from "components/MDInput";
 import MDButton from "components/MDButton";
 
-import bgImage from "assets/images/bg-sign-in-cover.jpeg";
 
-function Cover() {
+function PolarisSignup() {
   const [formData, setFormData] = useState({
-    clientName: "",
+    fullName: "",
     email: "",
     phone: "",
-    address1: "",
-    address2: "",
+    address: "",
     city: "",
-    country: "",
     state: "",
+    country: "",
     zip: "",
   });
 
@@ -29,90 +27,86 @@ function Cover() {
   };
 
   return (
-    <div
-      className="sign_in_form"
-      style={{
-        minHeight: "100vh",
-        display: "flex",
-        justifyContent: "center",
-        alignItems: "center",
-        padding: "2rem",
-      }}
-    >
-      <Card className="signin-card p-4" style={{ maxWidth: "800px", width: "100%" }}>
-        <MDTypography variant="h4" fontWeight="bold" color="text" align="center">
-          Welcome to Commissions
-        </MDTypography>
-        <MDTypography variant="button" color="text" align="center" mb={3}>
-          Already have an Account? <Link to="/authentication/sign-in">Sign In</Link>
-        </MDTypography>
+    <div className="bms-journey-wrapper">
+      <Card className="signup-card">
+        <div className="signup-heading">
+          <h1 className="brand-name">Polaris</h1>
+          <p className="welcome-text">Welcome to Polaris</p>
+          <p className="sub-text">Create your account or Log in to get started</p>
+        </div>
 
-        <form className="form-grid">
-          <div className="form-row">
-            <div className="form-col">
-              <MDInput
-                label="Client Name*"
-                fullWidth
-                value={formData.clientName}
-                onChange={handleChange("clientName")}
-              />
-            </div>
-            <div className="form-col">
-              <MDInput
-                label="Email"
-                type="email"
-                fullWidth
-                value={formData.email}
-                onChange={handleChange("email")}
-              />
-            </div>
+        <form className="form_signup_code">
+          <div className="form-group">
+            <label className="form-label">Full name*</label>
+            <MDInput
+              placeholder="Enter your name"
+              fullWidth
+              value={formData.fullName}
+              onChange={handleChange("fullName")}
+            />
+          </div>
+
+          <div className="form-group">
+            <label className="form-label">Email address*</label>
+            <MDInput
+              placeholder="Enter your email"
+              type="email"
+              fullWidth
+              value={formData.email}
+              onChange={handleChange("email")}
+            />
+          </div>
+
+          <div className="form-group">
+            <label className="form-label">Phone number*</label>
+            <MDInput
+              placeholder="Enter your number"
+              fullWidth
+              value={formData.phone}
+              onChange={handleChange("phone")}
+            />
+          </div>
+
+          <div className="form-group">
+            <label className="form-label">Address*</label>
+            <MDInput
+              placeholder="Address"
+              fullWidth
+              value={formData.address}
+              onChange={handleChange("address")}
+            />
+          </div>
+
+          <div className="form-group current_location">
+            <MDButton color="info" variant="outlined" fullWidth>
+              Use Current Location
+            </MDButton>
           </div>
 
           <div className="form-row">
             <div className="form-col">
+              <label className="form-label">City*</label>
               <MDInput
-                label="Phone Number"
-                fullWidth
-                value={formData.phone}
-                onChange={handleChange("phone")}
-              />
-            </div>
-            <div className="form-col">
-              <MDButton color="info" fullWidth>
-                Use Current Location
-              </MDButton>
-            </div>
-          </div>
-
-          <div className="form-row">
-            <div className="form-col">
-              <MDInput
-                label="Address 1"
-                fullWidth
-                value={formData.address1}
-                onChange={handleChange("address1")}
-              />
-            </div>
-            <div className="form-col">
-              <MDInput
-                label="Address 2"
-                fullWidth
-                value={formData.address2}
-                onChange={handleChange("address2")}
-              />
-            </div>
-          </div>
-
-          <div className="form-row">
-            <div className="form-col">
-              <MDInput
-                label="City"
+                placeholder="City"
                 fullWidth
                 value={formData.city}
                 onChange={handleChange("city")}
               />
             </div>
             <div className="form-col">
+              <label className="form-label">State*</label>
+              <MDInput
+                placeholder="State"
+                fullWidth
+                value={formData.state}
+                onChange={handleChange("state")}
+              />
+            </div>
+          </div>
+
+          <div className="form-row">
+            <div className="form-col">
+              <label className="form-label">Country*</label>
               <Select
                 value={formData.country}
                 onChange={handleChange("country")}
@@ -120,32 +114,16 @@ function Cover() {
                 fullWidth
               >
                 <MenuItem value="" disabled>
-                  Country
+                  Select Country
                 </MenuItem>
                 <MenuItem value="India">India</MenuItem>
                 <MenuItem value="USA">USA</MenuItem>
               </Select>
             </div>
-          </div>
-
-          <div className="form-row">
             <div className="form-col">
-              <Select
-                value={formData.state}
-                onChange={handleChange("state")}
-                displayEmpty
-                fullWidth
-              >
-                <MenuItem value="" disabled>
-                  State
-                </MenuItem>
-                <MenuItem value="Delhi">Delhi</MenuItem>
-                <MenuItem value="Maharashtra">Maharashtra</MenuItem>
-              </Select>
-            </div>
-            <div className="form-col">
+              <label className="form-label">Zip Code*</label>
               <MDInput
-                label="Zip Code"
+                placeholder="Zip code"
                 fullWidth
                 value={formData.zip}
                 onChange={handleChange("zip")}
@@ -153,10 +131,17 @@ function Cover() {
             </div>
           </div>
 
-          <div className="form-button mt-4">
+          <div className="form-group btn_signup_form">
             <MDButton color="info" fullWidth>
-              Next
+              Sign Up
             </MDButton>
+          </div>
+
+          <div className="signin-footer">
+            <p>
+              Already have an account?{" "}
+              <Link to="/authentication/sign-in">Sign In</Link>
+            </p>
           </div>
         </form>
       </Card>
@@ -164,4 +149,4 @@ function Cover() {
   );
 }
 
-export default Cover;
+export default PolarisSignup;

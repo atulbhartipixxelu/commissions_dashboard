@@ -1,0 +1,42 @@
+/* Mobile Responsive Css Start*/
+
+@media only screen and (max-width: 767px) {
+
+/* Sign Up Screen Responsive */
+    header.header_sign_auth .container {
+        width: 100%;
+        padding: 0 15px;
+    }
+
+
+
+}
+
+/* Mobile Responsive Css End*/
+
+
+
+/* Ipad Responsive Css Start*/
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+
+/* Sign Up Screen Responsive */
+    header.header_sign_auth .container {
+        width: 100%;
+        margin: 0 auto;
+        padding: 0 25px;
+    }
+
+/* Sign In Form Responsive */
+    .signup-card {
+        max-width: 450px;
+    }
+
+
+}
+
+/* Ipad Responsive Css End*/
+
+
+
+

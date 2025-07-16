@@ -49,7 +49,7 @@ import routes from "routes";
 
 // Custom Css Link
 import '../src/assets/css/globe.css';
-
+import '../src/assets/css/responsive.css';
 
 
 // Material Dashboard 3 PRO React contexts

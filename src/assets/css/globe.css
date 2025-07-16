@@ -1,260 +1,519 @@
-/* Sign In Css Start */
-.page-authentication-sign-up-cover  .MuiBox-root.css-10qrtl2 {
-    display: none;
+:root {
+    --skyblue-color: #29B0EA;
 }
-/* === Signup Page Styles === */
+
+/* Sign Up Css Start */
+
 .signup-container {
-  max-width: 800px;
-  margin: 40px auto;
-  text-align: center;
-  font-family: sans-serif;
-  padding: 0 20px;
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    text-align: center;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
-
 .signup-logo {
-  height: 40px;
-}
-
-.signup-header {
+  max-width: 150px;
   margin-bottom: 20px;
 }
 
-.signup-text {
-  font-size: 14px;
-  margin-top: 10px;
-}
-.signup-link {
-    font-weight: bold;
-    background: linear-gradient(180deg, #007BFF 0%, #1E90FF 100%);
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-    color: transparent;
+.signup-welcome h2 {
+    margin-bottom: 10px;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 100%;
+    text-align: center;
+    color: #000;
 }
 
-.signup-info-box {
-    border: 1px solid #00a4bd;
-    border-radius: 4px;
-    padding: 20px;
+.signup-welcome p {
     margin-bottom: 30px;
-    width: 75%;
-    margin: 0 auto;
+    font-weight: 600;
+    font-size: 14px;
+    color: #6B7280;
 }
-
-.signup-info-box h4 {
-  margin: 0 0 10px;
-  font-weight: 600;
+.signup-footer p {
+    font-weight: 500;
+    font-size: 14px;
+    text-align: center;
+    color: #6B7280;
 }
-
-.signup-info-box p {
-  font-size: 14px;
-}
-
-.classic-login-link {
-  font-weight: bold;
-    background: linear-gradient(180deg, #007BFF 0%, #1E90FF 100%);
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-    color: transparent;
-  text-decoration: none;
-  font-weight: bold;
-}
-.signup-main {
+.social-btn {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 10px;
     display: flex;
-    flex-wrap: wrap;
+    align-items: center;
     justify-content: center;
-    align-items: end;
-    margin-top: 50px;
+    cursor: pointer;
+    border: 1px solid #EDEDED;
+    box-shadow: 0px 2px 2px 0px #00000014;
+    border-radius: 7px;
+    background: #FFFFFF;
+    font-weight: 600;
+    font-size: 14px;
+    color: #6B7280;
+}
+
+.social-btn img {
+  width: 20px;
+  margin-right: 8px;
 }
 
 .signup-form {
-    flex: 1 1 300px;
-    text-align: left;
+  margin: 20px 0;
 }
 
 .signup-form label {
-  display: block;
-  font-weight: bold;
-  margin-bottom: 5px;
+    display: block;
+    text-align: left;
+    margin-bottom: 5px;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 100%;
+    color: #6B7280;
 }
 
 .signup-form input {
-  width: 100%;
-  padding: 12px;
-  border: 1px solid #ccd0d5;
-  border-radius: 4px;
-  margin-bottom: 15px;
-  background: #f5f8fa;
-}
-
-.next-button {
-  width: 100%;
-  background: linear-gradient(180deg, #007BFF 0%, #1E90FF 100%);
-  border: none;
-  color: white;
-  padding: 12px;
-  border-radius: 4px;
-  cursor: pointer;
-  font-weight: bold;
-}
-
-.signup-divider {
-    width: 1px;
-    background: #ccd0d5;
-    height: 155px;
-    margin: 0px 36px;
-}
-
-.signup-social {
-  flex: 1 1 200px;
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-}
-
-.social-btn {
-    background: #e3e3e3;
-    border: 1px solid #ccd0d5;
+    width: 100%;
     padding: 12px;
-    border-radius: 4px;
+    margin-bottom: 26px;
+    border-radius: 7px;
+    height: 48px;
+    box-shadow: 0px 2px 2px 0px #00000014;
+    border: 1px solid #EDEDED;
+    background: #FFFFFF;
+    margin-top: 4px;
+    outline: none;
+}
+.next-button {
+    width: 100%;
+    padding: 12px;
+    background: var(--skyblue-color);
+    color: #fff;
+    border: none;
+    border-radius: 10px;
     cursor: pointer;
-    text-align: left;
+    height: 48px;
 }
 
-.signup-footer-cta {
-    width: 66%;
-    margin: 50px auto 0;
-}
-.signup-footer-cta p {
-  margin-bottom: 20px;
-}
-
-.signup-cta-buttons button {
-  background: transparent;
-  border: none;
-  background: linear-gradient(180deg, #007BFF 0%, #1E90FF 100%);
-  color: #fff;
-  padding: 10px 20px;
-  border-radius: 4px;
-  margin: 0 10px;
-  cursor: pointer;
-}
-body.page-authentication-sign-up-cover {
-    background-color: #fff;
-}
 .signup-footer {
-  margin-top: 40px;
-  font-size: 12px;
+  margin-top: 20px;
 }
 
-.signup-footer a {
-  text-decoration: none;
+.signup-link {
+  color: var(--skyblue-color);
   font-weight: bold;
-    background: linear-gradient(180deg, #007BFF 0%, #1E90FF 100%);
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-    color: transparent;
 }
-.signup-social button.social-btn img {
-    width: 18px;
+
+body.page-authentication-sign-up-cover .MuiDrawer-paper.MuiDrawer-paperAnchorLeft {
+    display: none;
 }
-.signup-social button.social-btn {
+header.header_sign_auth {
+    padding: 10px 0;
+}
+
+header.header_sign_auth .container {
+    width: 1240px;
+    margin: 0 auto;
+}
+
+.auth_layout_display {
     display: flex;
     align-items: center;
-    gap: 15px;
-}
-body.page-authentication-sign-up-cover .MuiPaper-root.MuiPaper-elevation.MuiPaper-elevation0.MuiDrawer-paper.MuiDrawer-paperAnchorLeft.MuiDrawer-paperAnchorDockedLeft.css-k54eqi-MuiPaper-root-MuiDrawer-paper {
-    display: none;
+    justify-content: space-between;
 }
 
-
-
-
-
-
-
-
-/* Sign IN Section Css */
-body.page-authentication-sign-in-cover .MuiPaper-root.MuiPaper-elevation.MuiPaper-elevation0.MuiDrawer-paper.MuiDrawer-paperAnchorLeft {
-    display: none;
-}
-.sign_in_form .MuiPaper-root.signin-card {
-    padding: 30px;
-    background: #e1e1e14f;
-    max-width: 550px !important;
-}
-.sign_in_form .MuiPaper-root.signin-card .form-row {
-    display: flex;
-    gap: 20px;
-}
-.form-col {
-    width: 100%;
-    margin-bottom: 23px;
-}
-body.page-authentication-sign-in-cover {
-    background: #fff;
-}
-.sign_in_form h4 {
-    color: #000;
-    margin-bottom: 8px;
-}
-.sign_in_form .css-1d1wvvk-MuiInputBase-root-MuiOutlinedInput-root-MuiSelect-root {
-    height: 44.9px;
-}
-
-.sign_in_form  button.MuiButtonBase-root.MuiButton-root.MuiButton-contained.MuiButton-containedPrimary {
-    box-shadow: none;
-    background: linear-gradient(180deg, #007BFF 0%, #1E90FF 100%);
-}
-.pricing_table .MuiTabs-root {
-    border: 1px solid #ddd;
-    border-radius: 0;
-    background: transparent;
+.auth_layout_display .header-left img {
     width: 50%;
-    margin: 45px auto;
 }
-.pricing_table button.Mui-selected {
-    background: #000 !important;
-    border-radius: 0;
-    color: #fff !important;
-    font-weight: 300;
-}
-.pricing_table button.MuiButtonBase-root {
-    background: #f4f4f4;
-    border: none;
-    border-radius: inherit !important;
-    height: 43px;
-}
-.pricing_table h4.MuiTypography-root {
-    font-size: 32px;
-}
-
-.pricing_table h4.MuiTypography-root {
-    font-size: 32px;
-}
-
-.pricing_table .MuiBox-root.css-1wr13d6 {
-    padding: 5px 0px;
-}
-
-.pricing_table .MuiBox-root.css-1wr13d6 p.MuiTypography-root {
-    font-size: 15px;
-    line-height: 0;
-}
-
-.pricing_table .css-1k22fk6-MuiGrid-root {
-    flex-basis: 33%;
-    max-width: 33%;
-}
-.pricing_table button.MuiButtonBase-root.MuiButton-root.MuiButton-contained {
-    background: linear-gradient(180deg, #007BFF 0%, #1E90FF 100%);
-    opacity: 1;
+.header-right a {
+    width: 100%;
+    padding: 10px 23px;
+    background: var(--skyblue-color);
     color: #fff;
-    border-radius: 7px !important;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 16px;
 }
 
-.pricing_table a.MuiButtonBase-root.MuiButton-root.MuiButton-contained {
-    background: linear-gradient(180deg, #007BFF 0%, #1E90FF 100%);
+
+/* Sign In Css Start */
+/* Wrapper */
+.bms-journey-wrapper {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #f9fbfd;
+  padding: 2rem;
 }
-.pricing_table button.MuiButtonBase-root.MuiButton-root.MuiButton-contained.css-pt6p48-MuiButtonBase-root-MuiButton-root {
-    background: #000000 !important;
+
+/* Card styling */
+.signup-card {
+    width: 100%;
+    max-width: 400px;
+    padding: 0;
+    box-sizing: border-box;
+    box-shadow: none !important;
+}
+
+/* Heading section */
+.signup-heading {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+.signin-footer p a {
+    color: var(--skyblue-color);
+}
+.brand-name {
+  color: var(--skyblue-color);
+  font-weight: bold;
+  font-size: 24px;
+}
+.bms-journey-wrapper form.form_signup_code .form-row .form-col {
+    width: 50%;
+}
+.signin-footer p {
+    font-weight: 500;
+    font-size: 14px;
+    color: #6B7280;
+}
+.bms-journey-wrapper form.form_signup_code input {
+    border: 1px solid #EDEDED;
+    background: #FFFFFF;
+    box-shadow: 0px 2px 2px 0px #00000014;
+    border-radius: 7px;
+    height: 48px;
+    box-sizing: inherit;
+}
+.bms-journey-wrapper form.form_signup_code .MuiSelect-select.MuiSelect-outlined {
+    border: 1px solid #EDEDED;
+    background: #FFFFFF;
+    box-shadow: 0px 2px 2px 0px #00000014;
+    border-radius: 7px;
+    height: 48px;
+    box-sizing: inherit;
+    color: #adadad;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 100%;
+    letter-spacing: 0px;
+}
+.css-1ooday6-MuiButtonBase-root-MuiButton-root:focus:not(:hover) {
+    background: transparent;
+    box-shadow: none;
+}
+.bms-journey-wrapper form.form_signup_code fieldset.MuiOutlinedInput-notchedOutline {
+    border: none;
+}
+.btn_signup_form button {
+    margin-top: 30px;
+    background-color: var(--skyblue-color) !important;
+    border: none !important;
+    box-shadow: none !important;
+    font-family: Inter;
+    font-weight: 700;
+    font-size: 14px;
+    height: 48px;
+}
+.bms-journey-wrapper form.form_signup_code .form-row {
+    display: flex;
+    gap: 10px;
+}
+.btn_signup_form button:hover {
+    background-color: #000 !important;
+}
+.welcome-text {
+  font-size: 18px;
+  margin-top: 8px;
+  font-weight: 600;
+}
+
+.sub-text {
+  font-size: 14px;
+  margin-top: 4px;
+  color: #555;
+}
+
+/* Form */
+.signup-form .form-group {
+  margin-bottom: 1rem;
+}
+
+.bms-journey-wrapper form.form_signup_code label {
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 100%;
+    color: #6B7280;
+}
+
+.signup-form .form-row {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.signup-form .form-col {
+  flex: 1;
+}
+.signin-footer {
+  margin-top: 1rem;
+  text-align: center;
+  font-size: 14px;
+}
+.current_location button {
+    border: 1px solid var(--skyblue-color);
+    color: var(--skyblue-color);
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-weight: 700;
+    font-size: 14px;
+    height: 48px;
+    background: #fff !important;
+}
+body.page-authentication-sign-in-cover .MuiDrawer-paper.MuiDrawer-paperAnchorLeft {
+    display: none;
+}
+body.page-authentication-sign-in-cover .signup-card {
+    background: transparent;
+    border: none;
+}
+
+
+
+/* Pricing Css */
+.header_grid {
+    display: none;
+}
+
+.pricing_table {
+    padding: 50px 0;
+}
+
+.our_plan_list ul li {
+    background: #00000014;
+    border: 1px solid #00000029;
+    width: fit-content;
+    margin: auto;
+    padding: 10px 21px 10px 35px;
+    border-radius: 40px;
+    list-style: none;
+    position: relative;
+    font-weight: 400;
+    font-size: 14px;
+    letter-spacing: 2px;
+}
+.our_plan_list h4 {
+    font-weight: 400;
+    font-size: 56px;
+    line-height: 64px;
+    margin-top: 30px;
+}
+.our_plan_list p {
+    font-family: Inter;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 31px;
+    text-align: center;
+    width: 54%;
+    margin: 10px auto 50px;
+    color: #4B4B4B;
+}
+.our_plan_list ul li:after {
+    position: absolute;
+    content: '';
+    background: #000;
+    width: 6px;
+    height: 6px;
+    left: 18px;
+    top: 18px;
+    border-radius: 50%;
+}
+.tab_box_design {
+    box-shadow: 0px 1px 2px 0px #00000033;
+    width: fit-content;
+    background: #FFFFFF !important;
+    margin: 0 auto 50px;
+    padding: 10px 10px !important;
+}
+body.page-pages-pricing-page .MuiPaper-root.MuiPaper-elevation.MuiPaper-rounded.MuiPaper-elevation1 {
+    background: #F8FAFD;
+}
+button.MuiButtonBase-root.MuiTab-root.MuiTab-textColorPrimary.Mui-selected {
+    background: #29B0EA;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+    color: #fff !important;
+}
+button.MuiButtonBase-root.MuiTab-root {
+    padding: 4px 20px;
+}
+
+.pricing_card {
+    box-shadow: 0px 2px 2px 0px #00000014;
+    border: 1px solid #EDEDED;
+    border-radius: 32px;
+    background: #FFFFFF;
+}
+
+.pricing_card .MuiBox-root, .pricing_card  .MuiPaper-root {
+    background-color: transparent !important;
+    border: none;
+}
+
+.pricing_card.selected a.MuiButtonBase-root.MuiButton-root {
+    background: #fff;
+    color: #000 !important;
+    border: none !important;
+    border-radius: 9px;
+    box-shadow: none;
+}
+
+.pricing_card {
+    position: relative;
+    border: 1px solid #ddd;
+    border-radius: 32px;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s ease, color 0.3s ease;
+    color: #000;
+}
+
+.pricing_card:hover {
+  transform: translateY(-5px);
+}
+
+.pricing_card.selected {
+  background: linear-gradient(180deg, #29B0EA 0%, #66D1FF 100%);
+  border: none;
+  color: #fff; /* <-- Make ALL text white */
+}
+
+.pricing_card.selected * {
+  color: #fff !important; /* Make ALL child text white too */
+}
+
+.pricing_card .selected_chip {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+.form_grid_width fieldset.MuiOutlinedInput-notchedOutline {
+    outline: none !important;
+    box-shadow: 0px 2px 2px 0px #00000014;
+    border: 1px solid #EDEDED;
+    background: transparent;
+}
+.form_grid_width input {
+    height: 48px;
+    box-sizing: inherit;
+    background: #fff;
+    box-shadow: 0px 2px 2px 0px #00000014;
+    border: 1px solid #EDEDED;
+    border-radius: 7px;
+    outline: none !important;
+}
+.pricing_plan_disble .MuiPaper-root.MuiPaper-elevation.MuiPaper-rounded.MuiPaper-elevation1.MuiCard-root.select_color_bg {
+    box-shadow: 0px 0px 2px 2px #FFFFFF66 inset;
+    border: 1px solid #EDEDED;
+    background: #fff;
+    border-radius: 32px;
+    padding: 40px;
+}
+
+.color_change {
+    background: #000 !important;
+    color: #fff !important;
+    position: absolute;
+    right: 18px;
+    top: 19px;
+    height: 35px !important;
+    padding: 0 9px !important;
+    font-size: 12px !important;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 200;
+}
+.fixed_pricing_bg .MuiPaper-root.MuiPaper-elevation.MuiPaper-rounded.MuiPaper-elevation1.MuiCard-root {
+    background: transparent;
+    box-shadow: none !important;
+    border: none;
+}
+.pricing_plan_disble .price_card_display h4 {
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 75px;
+}
+.pricing_plan_disble .price_card_display h6.MuiTypography-root {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 28px;
+}
+.pricing_plan_disble .price_card_display p.MuiTypography-root {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+}
+.pricing_plan_disble .price_card_display .button_price button {
+    border: 1px solid #DDDDDD;
+    box-shadow: 0px 0px 10px 2px #FFFFFF52 inset !important;
+    margin-top: 14px;
+    border-radius: 12px;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 20px;
+    color: #000;
+}
+.pricing_plan_disble .price_card_display ul li {
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 22px;
+    padding: 4px 0;
+}
+h6.MuiTypography-root.subtitle_features {
+    margin-top: 30px;
+    margin-bottom: 15px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #000;
+}
+
+.form_grid_width .MuiGrid-root.MuiGrid-item.MuiGrid-grid-xs-12.MuiGrid-grid-sm-6 {
+    max-width: 100%;
+    flex-basis: 40%;
+}
+.form_grid_width input {
+    height: 48px;
+    box-sizing: inherit;
+}
+.back_btn button {
+    border: 1px solid #29B0EA;
+    background: transparent;
+    color: #29B0EA;
+    box-shadow: none;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 20px;
+    height: 48px;
+    border-radius: 11px;
+}
+.sign_in_btn button {
+    background: #29B0EA !important;
+    border-radius: 11px;
+    height: 48px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 20px;
+    color: #fff;
+    box-shadow: none;
+    opacity: 1;
+}
+.form_grid_width .MuiGrid-root.MuiGrid-item.MuiGrid-grid-xs-6.MuiGrid-grid-sm-3 {
+    max-width: 15% !important;
+    flex-basis: 10% !important;
 }

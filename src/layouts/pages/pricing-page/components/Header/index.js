@@ -34,59 +34,29 @@ import DefaultNavbar from "examples/Navbars/DefaultNavbar";
 import pageRoutes from "page.routes";
 
 // Images
-import bgImage from "assets/images/bg-pricing.jpg";
+
 
 function Header({ tabValue, tabHandler, children }) {
   return (
     <>
-      <DefaultNavbar
-        routes={pageRoutes}
-        action={{
-          type: "external",
-          route: "https://creative-tim.com/product/material-dashboard-pro-react",
-          label: "buy now",
-          color: "light",
-        }}
-        transparent
-        light
+    <div className="header_grid">
+      <DefaultNavbar 
+      className='group_header_display'
+          routes={pageRoutes}
+          action={{
+            type: "external",
+            route: "https://creative-tim.com/product/material-dashboard-pro-react",
+            label: "buy now",
+            color: "light",
+          }}
+          transparent
+          light
       />
-      <MDBox
-        position="relative"
-        minHeight="50vh"
-        height="50vh"
-        borderRadius="xl"
-        m={2}
-        pt={2}
-        sx={{
-          backgroundImage: ({ functions: { linearGradient, rgba }, palette: { black } }) =>
-            `${linearGradient(rgba(black.main, 0.25), rgba(black.main, 0.25))}, url(${bgImage})`,
-          backgroundSize: "cover",
-          backgroundPosition: "center",
-        }}
-      >
-        <Grid
-          container
-          spacing={3}
-          justifyContent="center"
-          sx={{ position: "relative", py: 22, textAlign: "center" }}
-        >
-          <Grid item xs={11} lg={5}>
-            <MDBox mb={1}>
-              <MDTypography variant="h2" color="white" fontWeight="bold">
-                Pick the best plan for you
-              </MDTypography>
-            </MDBox>
-            <MDBox mb={2}>
-              <MDTypography variant="body2" color="white" fontWeight="light">
-                You have Free Unlimited Updates and Premium Support on each package.
-              </MDTypography>
-            </MDBox>
-          </Grid>
-        </Grid>
-      </MDBox>
-      <Grid container sx={{ px: 6, my: 8 }}>
+    </div>
+    
+      <Grid container className="fixed_pricing_bg">
         <Grid item xs={12}>
-          <Card sx={{ mt: -16 }}>
+          <Card>
             {children}
           </Card>
         </Grid>
