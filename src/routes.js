@@ -47,6 +47,9 @@ import Invoice from "layouts/pages/account/invoice";
 import Timeline from "layouts/pages/projects/timeline";
 import PricingPage from "layouts/pages/pricing-page";
 import CompletePayment from "layouts/pages/complete-payment/complete-payment";
+// Email Templetes
+import PolarisRegistration from "layouts/pages/email-templates/polaris-registration";
+
 import Widgets from "layouts/pages/widgets";
 import RTL from "layouts/pages/rtl";
 import Charts from "layouts/pages/charts";
@@ -98,6 +101,8 @@ const routes = [
     ],
   },
   { type: "divider", key: "divider-0" },
+
+// DashBoard Menu
   {
     type: "collapse",
     name: "Dashboards",
@@ -119,6 +124,8 @@ const routes = [
     ],
   },
   { type: "title", title: "Pages", key: "title-pages" },
+
+// Pages DropDown Menu 
   {
     type: "collapse",
     name: "Pages",
@@ -137,8 +144,7 @@ const routes = [
           },
         ],
       },
-
-{
+      {
         name: "Complete Payment Page",
         key: "complete-payment",
         route: "/pages/complete-payment",
@@ -171,6 +177,8 @@ const routes = [
       },
     ],
   },
+
+// Account DropDown Menu
   {
     type: "collapse",
     name: "Account",
@@ -311,6 +319,25 @@ const routes = [
       },
     ],
   },
+
+// Email Templates DropDown Menu
+  {
+    type: "collapse",
+    name: "Email Templates",
+    key: "email-templates",
+    icon: <Icon fontSize="small">person</Icon>,
+    collapse: [
+      {
+        name: "Polaris Registration Page",
+        key: "polaris-registration",
+        route: "/pages/polaris-registration",
+        component: <PolarisRegistration />,
+      } 
+    ],
+  },
+
+
+
   {
     type: "collapse",
     name: "Authentication",
